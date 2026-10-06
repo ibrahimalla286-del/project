@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us / my Website</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">موقعي</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="about.html">Who are we</a></li>
+                    <li><a href="contact.html" class="action">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            < action="/submit" method="post">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phonenumber">Phone number:</label>
+                    <input type="number" id="phonenumber" name="phonenumber" required>
+
+                    <label for="date">Date of Birth:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <p>What's the reason for contact</p>
+                
+                <div class="form-group">
+                    <input type="radio" id="GI" name="reason" value="General Inquiry">
+                    <label for="GI">a General Inquiry:</label>
+                    <input type="radio" id="TS" name="reason" value="Technical Support">
+                    <label for="TS"> Technical Support: </label>
+                    <input type="radio" id="F" name="reason" value="FeedBack">    
+                    <label for="F">FeedBack:</label> 
+                </div>
+                <p>What's your prefered contact method</p>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="Email" name="Email" value="Email">
+                    <label for="Email">Contact Us by Email</label>
+                    <input type="checkbox" id="PC" name="PC" value="Phone Call">
+                    <label for="PC">Contact Us By a Phone Call</label>
+                    <input type="checkbox" id="FP" name="FP" value="Facebook Page">
+                    <label for="FP">Contact us by our facebook Page</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="access">How did you hear about us?</label>
+                    <select id="access" name="access">
+                        <option value="SM">Social Media</option>
+                        <option value="F/C">Friend / Colleague</option>
+                        <option value="SE">Search Engine</option>
+                        <option value="O">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Msg">We're happy to hear from you</label>
+                    <textarea id="Msg" name="Msg" rows="5" cols="40"></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 My Blog</p>
+        </footer>
+    </body>
+</html>
+            
+                
+
+            
